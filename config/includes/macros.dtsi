@@ -1,0 +1,35 @@
+// wait-ms: how long to wait before the next key is pressed
+// tap-ms: how long to hold the key down
+/ {
+  macros {
+    ZMK_MACRO(aacute,
+      wait-ms = <5>;
+      tap-ms = <5>;
+      bindings = <&kp SQT &kp A>;
+    )
+
+    ZMK_MACRO(eacute,
+      wait-ms = <5>;
+      tap-ms = <5>;
+      bindings = <&kp SQT &kp E>;
+    )
+
+    ZMK_MACRO(iacute,
+      wait-ms = <5>;
+      tap-ms = <5>;
+      bindings = <&kp SQT &kp I>;
+    )
+
+    ZMK_MACRO(oacute,
+      wait-ms = <5>;
+      tap-ms = <5>;
+      bindings = <&kp SQT &kp O>;
+    )
+
+    ZMK_MACRO(uacute,
+      wait-ms = <5>;
+      tap-ms = <5>;
+      bindings = <&kp SQT &kp U>;
+    )
+  };
+};
