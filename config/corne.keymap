@@ -69,6 +69,11 @@
 #define _LSFT(k) &mt LSHIFT k
 #define _RSFT(k) &mt RSHIFT k
 
+/ {
+  chosen {
+    zmk,matrix_transform = &five_column_transform;
+  };
+};
 
 / {
         keymap {
@@ -107,7 +112,7 @@
 // |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  (  |  )  |  |  |
 // | F1  | F2  | F3  | F4  | F5  |   |  ~  |  `  |  [  |  ]  |  ?  |
 // | F6  | F7  | F8  | F9  | F10 |   |  "  |  _  |  {  |  }  |  \  |
-//             | F11 | F12 |     |   |     | GUI | ALT |
+//             | F11 | F12 |     |   |     |     | ALT |
                         bindings = <
    ES_EXCL  ES_AT  ES_HASH  &kp DLLR &kp PRCNT       ES_CIRC  ES_AMP        ES_LPAR  ES_RPAR ES_PIPE
    &kp F1   &kp F2 &kp F3   &kp F4   &kp F5          ES_TILD  _RSFT(ES_GRV) ES_LBRC  ES_RBRC ES_QUES
