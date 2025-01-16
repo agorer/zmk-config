@@ -37,7 +37,7 @@
 #define ES_LPAR        &kp LS(N8)
 #define ES_RPAR        &kp LS(N9)
 #define ES_GRV         LBKT
-#define ES_TILD        &kp RA(N4)
+#define ES_TILD        &kp RA(SEMI)
 #define ES_LBRC        &kp RA(LBKT)
 #define ES_RBRC        &kp RA(RBKT)
 
@@ -60,6 +60,12 @@
 #define ES_QUES        &kp LS(MINUS)
 #define ES_PIPE        &kp RA(N1)
 #define ES_CCED        &kp NUHS
+
+#define ES_EQUAL       &kp LS(N0)
+#define ES_PLUS        &kp RBKT
+#define ES_ASTRK       &kp LS(RBKT)
+#define ES_MINUS       &kp SLASH
+#define ES_FSLH        &kp LS(N7)
 
 #define _NUM(k) &lt NUM k
 #define _SYM(k) &lt SYM k
@@ -87,8 +93,8 @@
 //            | ALT | GUI | SPC |   | ENT | GUI  | ALT |
                         bindings = <
    &kp Q         &kp W  &kp E     &kp R         &kp T                  &kp Y          &kp U         &kp I      &kp O    &kp P   
-   _LCTL(A)      &kp S  &kp D     _LSFT(F)      _ES(G)                 _ES(H)         _RSFT(J)      &kp K      &kp L    _RCTL(LT)
-   &kp Z         &kp X  &kp C     &kp V         &kp B                  &kp N          &kp M         &kp COMMA  &kp DOT  &kp SQT
+   _LCTL(A)      &kp S  &kp D     _LSFT(F)      _ES(G)                 _ES(H)         _RSFT(J)      &kp K      &kp L    _RCTL(NUBS)
+   &kp Z         &kp X  &kp C     &kp V         &kp B                  &kp N          &kp M         &kp COMMA  &kp DOT  ES_QUOT
                         &kp LALT  &kp LGUI      _NUM(SPACE)            _SYM(RET)      &kp RGUI      &kp RALT
                         >;
                 };
@@ -100,10 +106,10 @@
 // |     |     |     |     |     |   |  *  |  1  |  2  |  3  |  /  |
 //             | ALT | GUI |     |   |     | GUI | ALT |
                         bindings = <
-   ___   ___  ___      ___      ___         &kp EQUAL &kp N7   &kp N8   &kp N9  &kp N0
-   ___   ___  ___      ___      ___         &kp PLUS  &kp N4   &kp N5   &kp N6  &kp MINUS
-   ___   ___  ___      ___      ___         &kp ASTRK &kp N1   &kp N2   &kp N3  &kp FSLH
-              &kp LALT &kp LGUI ___         ___       &kp RGUI &kp RALT
+   _x_   _x_  _x_      _x_      _x_         ES_EQUAL &kp N7   &kp N8   &kp N9  &kp N0
+   _x_   _x_  _x_      _x_      _x_         ES_PLUS  &kp N4   &kp N5   &kp N6  ES_MINUS
+   _x_   _x_  _x_      _x_      _x_         ES_ASTRK &kp N1   &kp N2   &kp N3  ES_FSLH
+              &kp LALT &kp LGUI _x_         _x_       &kp RGUI &kp RALT
                         >;
                 };
 
@@ -117,7 +123,7 @@
    ES_EXCL  ES_AT  ES_HASH  &kp DLLR &kp PRCNT       ES_CIRC  ES_AMP        ES_LPAR  ES_RPAR ES_PIPE
    &kp F1   &kp F2 &kp F3   &kp F4   &kp F5          ES_TILD  _RSFT(ES_GRV) ES_LBRC  ES_RBRC ES_QUES
    &kp F6   &kp F7 &kp F8   &kp F9   &kp F10         ES_DQUOT ES_UND        ES_LCBR  ES_RCBR ES_BSLH
-                   &kp F11  &kp F12  ___             ___      ___           &kp RALT
+                   &kp F11  &kp F12  _x_             _x_      _x_           &kp RALT
                          >;
                  };
 
@@ -128,10 +134,10 @@
 // |     |     |     |     |     |   |     |     |     |     |     |
 //             |     |     |     |   |     |     |     |
                         bindings = <
-   ___      ___      &kp UP     ___       &kp LC(UP)  ___  ___           ___           ___         ___
-   ___      &kp LEFT &kp DOWN   &kp RIGHT ___         ___  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_MUTE  ___
-   ___      ___      ___        ___       ___         ___  ___           ___           ___         ___
-                     ___        ___       ___         ___  ___           ___
+   _x_      _x_      &kp UP     _x_       &kp LC(UP)  _x_  _x_           _x_           _x_         _x_
+   _x_      &kp LEFT &kp DOWN   &kp RIGHT _x_         _x_  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_MUTE  _x_
+   _x_      _x_      _x_        _x_       _x_         _x_  _x_           _x_           _x_         _x_
+                     _x_        _x_       _x_         _x_  _x_           _x_
                         >;
                 };
 
@@ -142,10 +148,10 @@
 // |     |     |  ç  |     |     |   |  ñ  |     |     |     |     |
 //             |     |     |     |   |     |     |     |
                         bindings = <
-   ES_ORD     ES_FORD  ES_EACUTE  ___  ___      ___       ES_UACUTE  ES_IACUTE  ES_OACUTE  &kp DEL
-   ES_AACUTE  ___      ___        ___  ___      ___       ___        ES_DIAE    ES_IEXL    ES_IQUE
-   ___        ___      ES_CCED    ___  ___      ES_NTILD  ___        ___        ___        ___
-                       ___        ___  ___      ___       ___        ___
+   ES_ORD     ES_FORD  ES_EACUTE  _x_  _x_      _x_       ES_UACUTE  ES_IACUTE  ES_OACUTE  &kp DEL
+   ES_AACUTE  _x_      _x_        _x_  _x_      _x_       _x_        ES_DIAE    ES_IEXL    ES_IQUE
+   _x_        _x_      ES_CCED    _x_  _x_      ES_NTILD  _x_        _x_        _x_        _x_
+                       _x_        _x_  _x_      _x_       _x_        _x_
                         >;
                 };
         };
