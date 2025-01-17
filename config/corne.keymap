@@ -21,6 +21,8 @@
 #include "keys/36.h"
 #include "includes/macros.dtsi"
 #include "includes/combos.dtsi"
+#include "includes/power.dtsi"
+
 
 // Short codes
 #define ___      &trans      //  transparent
@@ -129,12 +131,12 @@
 
                 adjust_layer { // layer 3
 // -----------------------------------------------------------------
-// |     |     | Up  |     |MCtrl|   |     |     |     |     |     |
+// |     |     | Up  |     |MCtrl|   |     |     |     |     | Off |
 // |     | Left| Down|Right|     |   |     | Vol-| Vol+| Mute|     |
 // |     |     |     |     |     |   |     |     |     |     |     |
 //             |     |     |     |   |     |     |     |
                         bindings = <
-   _x_      _x_      &kp UP     _x_       &kp LC(UP)  _x_  _x_           _x_           _x_         _x_
+   _x_      _x_      &kp UP     _x_       &kp LC(UP)  _x_  _x_           _x_           _x_         &soft_off
    _x_      &kp LEFT &kp DOWN   &kp RIGHT _x_         _x_  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_MUTE  _x_
    _x_      _x_      _x_        _x_       _x_         _x_  _x_           _x_           _x_         _x_
                      _x_        _x_       _x_         _x_  _x_           _x_
