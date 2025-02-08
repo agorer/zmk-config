@@ -108,10 +108,10 @@
 // |     |     |     |     |     |   |  *  |  1  |  2  |  3  |  /  |
 //             | ALT | GUI |     |   |     | GUI | ALT |
                         bindings = <
-   _x_   _x_  _x_      _x_      _x_         ES_EQUAL &kp N7   &kp N8   &kp N9  &kp N0
-   _x_   _x_  _x_      _x_      _x_         ES_PLUS  &kp N4   &kp N5   &kp N6  ES_MINUS
-   _x_   _x_  _x_      _x_      _x_         ES_ASTRK &kp N1   &kp N2   &kp N3  ES_FSLH
-              &kp LALT &kp LGUI _x_         &mo MED  &kp RGUI &kp RALT
+   _x_       _x_  _x_      _x_      _x_         ES_EQUAL &kp N7   &kp N8   &kp N9  &kp N0
+   &kp LCTRL _x_  _x_      _x_      _x_         ES_PLUS  &kp N4   &kp N5   &kp N6  ES_MINUS
+   _x_       _x_  _x_      _x_      _x_         ES_ASTRK &kp N1   &kp N2   &kp N3  ES_FSLH
+              &kp LALT &kp LGUI _x_             &mo MED  &kp RGUI &kp RALT
                         >;
                 };
 
