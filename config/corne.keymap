@@ -111,7 +111,7 @@
    _x_   _x_  _x_      _x_      _x_         ES_EQUAL &kp N7   &kp N8   &kp N9  &kp N0
    _x_   _x_  _x_      _x_      _x_         ES_PLUS  &kp N4   &kp N5   &kp N6  ES_MINUS
    _x_   _x_  _x_      _x_      _x_         ES_ASTRK &kp N1   &kp N2   &kp N3  ES_FSLH
-              &kp LALT &kp LGUI _x_         _x_       &kp RGUI &kp RALT
+              &kp LALT &kp LGUI _x_         &mo MED  &kp RGUI &kp RALT
                         >;
                 };
 
@@ -125,7 +125,7 @@
    ES_EXCL  ES_AT  ES_HASH  &kp DLLR &kp PRCNT       ES_CIRC  ES_AMP        ES_LPAR  ES_RPAR ES_PIPE
    &kp F1   &kp F2 &kp F3   &kp F4   &kp F5          ES_TILD  _RSFT(ES_GRV) ES_LBRC  ES_RBRC ES_QUES
    &kp F6   &kp F7 &kp F8   &kp F9   &kp F10         ES_DQUOT ES_UND        ES_LCBR  ES_RCBR ES_BSLH
-                   &kp F11  &kp F12  _x_             _x_      _x_           &kp RALT
+                   &kp F11  &kp F12  &mo MED           _x_      _x_         &kp RALT
                          >;
                  };
 
