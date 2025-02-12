@@ -29,7 +29,7 @@
 #define _x_      &none
 
 // ES codes
-#define ES_LT          &kp NUBS
+#define ES_LT          &kp GRAVE
 #define ES_QUOT        &kp MINUS
 #define ES_DQUOT       &kp LS(N2)
 #define ES_AT          &kp RA(N2)
@@ -47,8 +47,8 @@
 #define ES_LCBR        &kp RA(SQT)
 #define ES_RCBR        &kp RA(NUHS)
 #define ES_BSLH        &kp RA(GRAVE)
-#define ES_ORD         &kp GRAVE
-#define ES_FORD        &kp LS(GRAVE)
+#define ES_ORD         &kp NUBS
+#define ES_FORD        &kp LS(NUBS)
 #define ES_AACUTE      &aacute
 #define ES_EACUTE      &eacute
 #define ES_IACUTE      &iacute
@@ -143,17 +143,17 @@
                         >;
                 };
 
-                es_layer { // layer 4
+                es_layer { // layer 4 (spanish symbols)
 // -----------------------------------------------------------------
 // |  º  |  ª  |  é  |     |     |   |     |  ú  |  í  |  ó  | Del |
 // |  á  |     |     |     |     |   |     |     |  ¨  |  ¡  |  ¿  |
 // |     |     |  ç  |     |     |   |  ñ  |     |     |     |     |
 //             |     |     |     |   |     |     |     |
                         bindings = <
-   ES_ORD     ES_FORD  ES_EACUTE  _x_  _x_      _x_       ES_UACUTE  ES_IACUTE  ES_OACUTE  &kp DEL
-   ES_AACUTE  _x_      _x_        _x_  _x_      _x_       _x_        ES_DIAE    ES_IEXL    ES_IQUE
-   _x_        _x_      ES_CCED    _x_  _x_      ES_NTILD  _x_        _x_        _x_        _x_
-                       _x_        _x_  _x_      _x_       _x_        _x_
+   ES_ORD     ES_FORD  ES_EACUTE  _x_  _x_      _x_       ES_UACUTE   ES_IACUTE  ES_OACUTE  &kp DEL
+   ES_AACUTE  _x_      _x_        _x_  _x_      _x_       &kp LSHIFT  ES_DIAE    ES_IEXL    ES_IQUE
+   _x_        _x_      ES_CCED    _x_  _x_      ES_NTILD  _x_         _x_        _x_        _x_
+                       _x_        _x_  _x_      _x_       &kp RGUI    _x_
                         >;
                 };
         };
