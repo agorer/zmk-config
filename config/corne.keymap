@@ -150,10 +150,10 @@
 // |     |     |  ç  |     |     |   |  ñ  |     |     |     |     |
 //             |     |     |     |   |     |     |     |
                         bindings = <
-   ES_ORD     ES_FORD  ES_EACUTE  _x_  _x_      _x_       ES_UACUTE  ES_IACUTE  ES_OACUTE  &kp DEL
-   ES_AACUTE  _x_      _x_        _x_  _x_      _x_       _x_        ES_DIAE    ES_IEXL    ES_IQUE
-   _x_        _x_      ES_CCED    _x_  _x_      ES_NTILD  _x_        _x_        _x_        _x_
-                       _x_        _x_  _x_      _x_       _x_        _x_
+   ES_ORD     ES_FORD  ES_EACUTE  _x_  _x_      _x_       ES_UACUTE   ES_IACUTE  ES_OACUTE  &kp DEL
+   ES_AACUTE  _x_      _x_        _x_  _x_      _x_       &kp LSHIFT  ES_DIAE    ES_IEXL    ES_IQUE
+   _x_        _x_      ES_CCED    _x_  _x_      ES_NTILD  _x_         _x_        _x_        _x_
+                       _x_        _x_  _x_      _x_       &kp RGUI    _x_
                         >;
                 };
         };
