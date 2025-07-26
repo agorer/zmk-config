@@ -46,7 +46,7 @@
 #define ES_UND         &kp LS(SLASH)
 #define ES_LCBR        &kp RA(SQT)
 #define ES_RCBR        &kp RA(NUHS)
-#define ES_BSLH        &kp RA(GRAVE)
+#define ES_BSLH        &kp RA(NUBS)
 #define ES_ORD         &kp NUBS
 #define ES_FORD        &kp LS(NUBS)
 #define ES_AACUTE      &aacute
